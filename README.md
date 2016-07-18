@@ -8,6 +8,7 @@ the bug happens when :
 
 to run the sample do the following:
 * install appium server globably : npm i -g appium
+* cd into test directory : cd test
 * compile the android app : npm run compile
 * run appium server in a seperate console window , open a console and type : appium
 * run the webdriver io tests: npm test
