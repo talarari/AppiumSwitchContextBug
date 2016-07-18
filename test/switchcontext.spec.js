@@ -3,12 +3,6 @@ var browser = require('./browser');
 
 describe('switch context bug', function() {
 
-    //it('should switch between contexts like a fox',function() {
-    //    browser.switchToNativeContext();
-    //    browser.switchToWebviewContext();
-    //    browser.switchToNativeContext();
-    //    browser.switchToWebviewContext();
-    //});
 
     it('should find a web element',function() {
         browser.switchToWebviewContext();
