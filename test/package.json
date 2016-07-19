@@ -12,6 +12,7 @@
   "devDependencies": {
     "wdio": "^0.3.3",
     "wdio-mocha-framework": "^0.3.5",
-    "wdio-spec-reporter": "0.0.2"
+    "wdio-spec-reporter": "0.0.2",
+    "webdriverio": "^4.2.1"
   }
 }

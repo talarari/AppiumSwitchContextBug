@@ -6,7 +6,6 @@ describe('switch context bug', function() {
 
     it('should find a web element',function() {
         browser.switchToWebviewContext();
-        console.log('waiting for #main to be visible');
         browser.waitForVisible('#main');
         console.log('found #main in web context');
     });
@@ -24,13 +23,7 @@ describe('switch context bug', function() {
 
     });
 
-   it('should click a native button, look for a non existent web element then look for an existing one',function(){
-
-       browser.switchToNativeContext();
-
-       browser.waitForVisible('~nativebutton');
-       browser.element('~nativebutton').click();
-       console.log('clicked native button');
+   it('should fail to find a non existing element then find an existing one',function(){
 
        browser.switchToWebviewContext();
 
@@ -44,8 +37,9 @@ describe('switch context bug', function() {
        }
        catch (err){
            console.log('couldnt find it, trying to find another element that does exist');
-           browser.switchToWebviewContext();
-           browser.waitForVisible('#main');
+
        }
+       var visiblie =browser.isVisible('#main');
+       console.log(visiblie);
    })
 });
