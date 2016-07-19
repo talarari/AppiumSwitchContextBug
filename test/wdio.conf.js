@@ -73,6 +73,7 @@ module.exports.config = {
         'device-orientation': 'portrait',
         'platformName': 'Android',
         'app':debugApkPath,
+        'recreateChromeDriverSessions': true
     }],
     //
     // ===================
