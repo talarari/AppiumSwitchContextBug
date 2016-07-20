@@ -7,6 +7,7 @@ the bug happens when :
 * appium server gets stuck and stops responding
 
 to run the sample do the following:
+* install appium server globaly from npm: npm i -g appium
 * cd into test directory : cd test
 * run npm install
 * run appium server in a seperate console window , open a console and type : appium
