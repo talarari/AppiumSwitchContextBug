@@ -1,6 +1,6 @@
 var path = require('path');
 
-var debugApkPath = path.resolve('../android/app/build/outputs/apk/app-debug.apk').replace(/\\/g,"/");
+var debugApkPath = path.resolve('../apk/app-debug.apk').replace(/\\/g,"/");
 
 console.log('this should only happen once');
 
